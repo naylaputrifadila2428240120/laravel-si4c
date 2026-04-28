@@ -15,10 +15,12 @@ class FakultasController extends Controller
         //akses model fakultaS
         $fakultas = Fakultas::all(); // SELECT * FROM fakultas
         //KIRIM DATA FAKULTAS KE VIEW
-        dd($fakultas);
-        // return view('fakultas.index', compact('fakultas'));
+        // dd($fakultas); // dump data
+        // kirim data fakultas ke viuw
+        //return view('fakultas.index')->with('fakultas', $request);
+        // atau compact
+        return view('fakultas.index', compact('fakultas'));
     }
-
     /**
      * Show the form for creating a new resource.
      */
