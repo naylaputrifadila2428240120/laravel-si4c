@@ -1,7 +1,7 @@
 @extends('main')
 @section('content')
 
-<h2>Data fakultas</h2>
+<h2>Data prodi</h2>
 <table>
                 <tr>
                         <th>No.</th>
