@@ -8,5 +8,4 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/prodi', [ProdiController::class, 'index']);
+Route::resource('prodi', ProdiController::class);
